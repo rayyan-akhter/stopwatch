@@ -1,0 +1,31 @@
+
+
+.clockContainer {
+  height: 100vh;
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: blanchedalmond;
+}
+
+
+.clock{
+  /* height: 350px;
+  width: 350px; */
+  /* border: 5px solid black; */
+  /* padding: 50px; */
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+}
+.meridiem{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}

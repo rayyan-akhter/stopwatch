@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
+/* .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    background-color: #797878;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .stopwatch-time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .btnContainer {
+    display: flex;
+    gap: 20px;
   }
-}
+  button{
+    cursor: pointer;
+  }
+  
+  .buttons {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .buttons:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.2s;
+
+  }
+  
+  .stopwatch-button {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    
+  }
+  .stopwatch-button:hover{
+    background-color: #ce6054;
+    /* transform: scale(1.05); */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .lapBtn{
+    border: none;
+    border-radius: 5px;
+    width: 45px;
+    transform: scale(1.05);
+
+  }
+  .lapBtn:hover{
+    background-color:wheat;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recorded-laps {
+    width: 100%;
+    max-width: 400px;
+    overflow-y: auto;
+  }
